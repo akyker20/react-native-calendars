@@ -50,7 +50,9 @@ class Day extends Component {
       return validDots.map((dot, index) => {
         return (
           <View key={dot.key ? dot.key : index} style={[baseDotStyle,
-            { backgroundColor: marking.selected && dot.selectedDotColor ? dot.selectedDotColor : dot.color}]}/>
+            { justifyContent: 'center', alignItems: 'center', backgroundColor: marking.selected && dot.selectedDotColor ? dot.selectedDotColor : dot.color}]}>
+            <Text style={{color: 'white', fontSize: 12, fontWeight: '900'}}>6</Text>
+          </View>
         );
       });
     }
